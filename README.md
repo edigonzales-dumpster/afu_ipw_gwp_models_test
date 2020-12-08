@@ -51,7 +51,7 @@ java -jar /Users/stefan/apps/ilivalidator-1.11.8/ilivalidator-1.11.8.jar lk.xtf 
 Error: line 25: SBW.Sonderbauwerke.Sonderbauwerk: tid 2: The value of the attribute egrid of SBW.Sonderbauwerke.Sonderbauwerk was not found in the condition class.
 ```
 
-## Zwei Modell mit View
+## Zwei Modelle mit View
 ```
 java -jar /Users/stefan/apps/ilivalidator-1.11.8/ilivalidator-1.11.8.jar --config config.toml lk.xtf sbw.xtf
 ```
