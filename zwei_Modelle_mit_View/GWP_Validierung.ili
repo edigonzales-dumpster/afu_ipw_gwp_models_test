@@ -1,0 +1,22 @@
+INTERLIS 2.3;
+
+CONTRACTED MODEL GWP_Validierung 
+AT "https://example.com"
+VERSION "2020-12-08"  =
+	IMPORTS LK, SBW;
+
+	VIEW TOPIC Sonderbauwerke_Validierung =
+		DEPENDS ON SBW.Sonderbauwerke, LK.Leitungskataster;	
+
+		VIEW v_Sonderbauwerk
+			PROJECTION OF SBW.Sonderbauwerke.Sonderbauwerk;
+			=
+			ALL OF Sonderbauwerk;
+			EXISTENCE CONSTRAINT egrid REQUIRED IN LK.Leitungskataster.Knoten:egrid;
+		END v_Sonderbauwerk;
+
+	END Sonderbauwerke_Validierung;
+
+END GWP_Validierung.
+
+

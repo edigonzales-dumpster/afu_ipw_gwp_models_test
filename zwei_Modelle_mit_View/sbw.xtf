@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION SENDER="ili2pg-4.4.4-5586f5e20f4e40fd05286ecb363ec6d450b85cfa" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="CoordSys" VERSION="2015-11-24" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="Units" VERSION="2012-02-20" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="GeometryCHLV03_V1" VERSION="2017-12-04" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="GeometryCHLV95_V1" VERSION="2017-12-04" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="SBW" VERSION="2020-12-08" URI="https://example.com"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <SBW.Sonderbauwerke BID="SBW.Sonderbauwerke">
+      <SBW.Sonderbauwerke.Sonderbauwerk TID="1">
+        <egrid>CH793298640696</egrid>
+        <attr1>123</attr1>
+        <attr2>456</attr2>
+        <Lage>
+          <COORD>
+            <C1>2606038.631</C1>
+            <C2>1228867.618</C2>
+          </COORD>
+        </Lage>
+      </SBW.Sonderbauwerke.Sonderbauwerk>
+      <SBW.Sonderbauwerke.Sonderbauwerk TID="2">
+        <egrid>CH127158320676</egrid>
+        <attr1>789</attr1>
+        <attr2>543</attr2>
+        <Lage>
+          <COORD>
+            <C1>2607411.201</C1>
+            <C2>1228519.980</C2>
+          </COORD>
+        </Lage>
+      </SBW.Sonderbauwerke.Sonderbauwerk>
+    </SBW.Sonderbauwerke>
+  </DATASECTION>
+</TRANSFER>

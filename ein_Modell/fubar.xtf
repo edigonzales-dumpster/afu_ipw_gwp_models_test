@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION SENDER="ili2pg-4.4.4-5586f5e20f4e40fd05286ecb363ec6d450b85cfa" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="Units" VERSION="2012-02-20" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="CoordSys" VERSION="2015-11-24" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="GeometryCHLV03_V1" VERSION="2017-12-04" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="GeometryCHLV95_V1" VERSION="2017-12-04" URI="http://www.geo.admin.ch"/>
+      <MODEL NAME="Sonderbauwerke" VERSION="2020-12-08" URI="https://example.com"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <Sonderbauwerke.LK BID="Sonderbauwerke.LK">
+      <Sonderbauwerke.LK.Knoten TID="1">
+        <egrid>CH793298640696</egrid>
+        <attrA>aaa</attrA>
+        <attrB>bbb</attrB>
+        <Lage>
+          <COORD>
+            <C1>2606284.375</C1>
+            <C2>1228987.493</C2>
+          </COORD>
+        </Lage>
+      </Sonderbauwerke.LK.Knoten>
+      <!--
+      <Sonderbauwerke.LK.Knoten TID="2">
+        <egrid>CH127158320676</egrid>
+        <attrA>5555</attrA>
+        <attrB>6666</attrB>
+        <Lage>
+          <COORD>
+            <C1>2607177.444</C1>
+            <C2>1228723.767</C2>
+          </COORD>
+        </Lage>
+      </Sonderbauwerke.LK.Knoten>
+      -->
+    </Sonderbauwerke.LK>
+    <Sonderbauwerke.Sonderbauwerke BID="Sonderbauwerke.Sonderbauwerke">
+      <Sonderbauwerke.Sonderbauwerke.Sonderbauwerk TID="3">
+        <egrid>CH793298640696</egrid>
+        <attr1>123</attr1>
+        <attr2>456</attr2>
+        <Lage>
+          <COORD>
+            <C1>2606284.375</C1>
+            <C2>1228987.493</C2>
+          </COORD>
+        </Lage>
+      </Sonderbauwerke.Sonderbauwerke.Sonderbauwerk>
+      <Sonderbauwerke.Sonderbauwerke.Sonderbauwerk TID="4">
+        <egrid>CH127158320676</egrid>
+        <attr1>789</attr1>
+        <attr2>654</attr2>
+        <Lage>
+          <COORD>
+            <C1>2607177.444</C1>
+            <C2>1228723.767</C2>
+          </COORD>
+        </Lage>
+      </Sonderbauwerke.Sonderbauwerke.Sonderbauwerk>
+    </Sonderbauwerke.Sonderbauwerke>
+  </DATASECTION>
+</TRANSFER>

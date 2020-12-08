@@ -1,0 +1,19 @@
+INTERLIS 2.3;
+
+MODEL LK (de)
+AT "https://example.com"
+VERSION "2020-12-08"  =
+  IMPORTS GeometryCHLV95_V1;
+
+  TOPIC Leitungskataster =
+
+    CLASS Knoten =
+      egrid : MANDATORY TEXT*14;
+      attrA : TEXT*20;
+      attrB : TEXT*20;
+      Lage : MANDATORY GeometryCHLV95_V1.Coord2;
+    END Knoten;
+
+  END Leitungskataster;
+
+END LK.

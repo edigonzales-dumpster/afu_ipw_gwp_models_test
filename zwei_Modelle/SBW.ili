@@ -1,0 +1,22 @@
+INTERLIS 2.3;
+
+MODEL SBW (de)
+AT "https://example.com"
+VERSION "2020-12-08"  =
+  IMPORTS GeometryCHLV95_V1, LK;
+
+  TOPIC Sonderbauwerke =
+    DEPENDS ON LK.Leitungskataster;
+
+    CLASS Sonderbauwerk =
+      egrid : MANDATORY TEXT*14;
+      attr1 : TEXT*20;
+      attr2 : TEXT*20;
+      Lage : MANDATORY GeometryCHLV95_V1.Coord2;
+
+      EXISTENCE CONSTRAINT egrid REQUIRED IN LK.Leitungskataster.Knoten:egrid;
+    END Sonderbauwerk;
+
+  END Sonderbauwerke;
+
+END SBW.
